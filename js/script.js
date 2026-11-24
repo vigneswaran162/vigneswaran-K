@@ -327,6 +327,14 @@
     init(); draw();
   }
 
+  /* ---------- Project details modal ---------- */
+  document.querySelectorAll('[data-details]').forEach((btn) => {
+    const dlg = document.getElementById(btn.dataset.details);
+    if (!dlg || typeof dlg.showModal !== 'function') { btn.hidden = true; return; }
+    btn.addEventListener('click', () => dlg.showModal());
+    dlg.addEventListener('click', (e) => { if (e.target === dlg || e.target.closest('[data-close]')) dlg.close(); });
+  });
+
   /* ---------- Footer year ---------- */
   const year = $('#year');
   if (year) year.textContent = new Date().getFullYear();
