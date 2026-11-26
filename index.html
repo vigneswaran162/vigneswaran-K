@@ -336,12 +336,42 @@
               <img src="ASSETS/slide4.png" alt="Virtual Event Management screenshot" loading="lazy" width="1885" height="906">
             </div>
             <div class="project__body">
-              <ul class="tags"><li>Web App</li><li>Event Management</li></ul>
+              <ul class="tags"><li>Node.js</li><li>Bootstrap</li><li>Event Management</li></ul>
               <h3>Virtual Event Management</h3>
               <p>Our Virtual Event Management System revolutionizes college event planning. Authorized staff can create,
                 manage, and promote events...</p>
-              <a class="link" href="https://avems-vigneswarans-projects.vercel.app/" target="_blank" rel="noopener">Live Demo <span aria-hidden="true">→</span><span class="sr-only"> (opens in new tab)</span></a>
+              <div class="project__actions">
+                <a class="link" href="https://avems-vigneswarans-projects.vercel.app/" target="_blank" rel="noopener">Live Demo <span aria-hidden="true">→</span><span class="sr-only"> (opens in new tab)</span></a>
+                <button class="link link--ghost" type="button" data-details="event-details" aria-haspopup="dialog">Details</button>
+              </div>
             </div>
+            <dialog class="modal" id="event-details" aria-labelledby="event-details-title">
+              <div class="modal__box">
+                <button class="modal__close" type="button" data-close aria-label="Close details">&times;</button>
+                <img class="modal__img" src="ASSETS/slide4.png" alt="" width="1885" height="906" loading="lazy">
+                <h3 id="event-details-title">Virtual Event Management</h3>
+                <p class="modal__lead">A web app for college event planning. The admin creates and announces events, students register online and receive a QR code entry pass by email, and attendance is marked by scanning that code at the event.</p>
+
+                <h4>Features</h4>
+                <ul class="feat">
+                  <li><b>Admin-only management</b><span>Only the admin can log in to add, edit and update events.</span></li>
+                  <li><b>Event announcements</b><span>The admin creates an event with a form and publishes it as an announcement for students.</span></li>
+                  <li><b>Student registration</b><span>Students register for an event online and get a confirmation by email.</span></li>
+                  <li><b>QR code entry pass</b><span>After registering, each student receives a QR code by email, which works as their entry pass.</span></li>
+                  <li><b>Attendance scanning</b><span>On the event day, the admin logs in and scans each student's QR code to mark them present or absent.</span></li>
+                  <li><b>Year-wise organization</b><span>Events are grouped by year, like a folder for each year, so past events are easy to find.</span></li>
+                  <li><b>Dashboard</b><span>Dashboard counts for events, registrations and attendance.</span></li>
+                  <li><b>Downloads</b><span>Download registration and attendance details.</span></li>
+                </ul>
+
+                <h4>Tech stack</h4>
+                <ul class="tags">
+                  <li>Node.js</li><li>Nodemailer</li><li>QR Code</li><li>Bootstrap</li><li>Vercel</li>
+                </ul>
+
+                <a class="link" href="https://avems-vigneswarans-projects.vercel.app/" target="_blank" rel="noopener">Live Demo <span aria-hidden="true">→</span><span class="sr-only"> (opens in new tab)</span></a>
+              </div>
+            </dialog>
           </article>
 
           <article class="project glass reveal" data-tilt>
@@ -388,12 +418,41 @@
               <img src="ASSETS/bus.png" alt="Bus Booking web app screenshot" loading="lazy" width="1848" height="853">
             </div>
             <div class="project__body">
-              <ul class="tags"><li>Web App</li><li>Booking System</li></ul>
+              <ul class="tags"><li>Angular</li><li>Booking System</li><li>Razorpay</li></ul>
               <h3>Bus Booking</h3>
               <p>A simple and efficient web application for booking bus seats online. Users can search for available
                 buses by date and route, select seats, and confirm their bookings...</p>
-              <a class="link" href="https://busbooking-webapp.vercel.app/" target="_blank" rel="noopener">Live Demo <span aria-hidden="true">→</span><span class="sr-only"> (opens in new tab)</span></a>
+              <div class="project__actions">
+                <a class="link" href="https://busbooking-webapp.vercel.app/" target="_blank" rel="noopener">Live Demo <span aria-hidden="true">→</span><span class="sr-only"> (opens in new tab)</span></a>
+                <button class="link link--ghost" type="button" data-details="bus-details" aria-haspopup="dialog">Details</button>
+              </div>
             </div>
+            <dialog class="modal" id="bus-details" aria-labelledby="bus-details-title">
+              <div class="modal__box">
+                <button class="modal__close" type="button" data-close aria-label="Close details">&times;</button>
+                <img class="modal__img" src="ASSETS/bus.png" alt="" width="1848" height="853" loading="lazy">
+                <h3 id="bus-details-title">Orange Bus – Online Bus Ticket Booking</h3>
+                <p class="modal__lead">A responsive bus booking web app with live seat selection, Razorpay payments (test mode) and a custom animated UI.</p>
+
+                <h4>Features</h4>
+                <ul class="feat">
+                  <li><b>Route &amp; date search</b><span>Search by origin, destination and date, with Salem → Chennai preselected.</span></li>
+                  <li><b>Bus results</b><span>Compare buses with departure and arrival times, price and AC details.</span></li>
+                  <li><b>Interactive seat map</b><span>Booked seats are locked, with a maximum of 4 seats per booking.</span></li>
+                  <li><b>Passenger details</b><span>Per-passenger forms with validation, plus a booking summary and fare calculation.</span></li>
+                  <li><b>Online payment</b><span>Razorpay checkout (test mode).</span></li>
+                  <li><b>Polished UX</b><span>Toast notifications, loading and empty states, animated icons and transitions, responsive from desktop to mobile.</span></li>
+                  <li><b>Schedule management</b><span>Admin-style form for adding new bus schedules.</span></li>
+                </ul>
+
+                <h4>Tech stack</h4>
+                <ul class="tags">
+                  <li>Angular 19</li><li>TypeScript</li><li>RxJS</li><li>Angular SSR</li><li>Express</li><li>Bootstrap 5</li><li>ngx-toastr</li><li>Razorpay</li><li>Vercel</li>
+                </ul>
+
+                <a class="link" href="https://busbooking-webapp.vercel.app/" target="_blank" rel="noopener">Live Demo <span aria-hidden="true">→</span><span class="sr-only"> (opens in new tab)</span></a>
+              </div>
+            </dialog>
           </article>
         </div>
 
