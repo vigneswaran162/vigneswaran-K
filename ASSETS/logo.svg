@@ -1,11 +1,11 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="Vigneswaran logo">
   <defs>
     <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#ff7a1a"/>
-      <stop offset="1" stop-color="#ff4d00"/>
+      <stop offset="0" stop-color="#E85A4F"/>
+      <stop offset="1" stop-color="#D93A30"/>
     </linearGradient>
   </defs>
   <rect width="64" height="64" rx="16" fill="#0a0605"/>
   <path d="M13 17 L27 49 H33 L47 17 H39 L30 39 L21 17 Z" fill="url(#g)"/>
-  <circle cx="49" cy="47" r="5" fill="#ff7a1a"/>
+  <circle cx="49" cy="47" r="5" fill="#E85A4F"/>
 </svg>
