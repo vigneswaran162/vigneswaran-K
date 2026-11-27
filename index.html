@@ -99,7 +99,7 @@
               <li><img src="ASSETS/bus.png" alt="" width="44" height="44"></li>
               <li class="stack__more">+2</li>
             </ul>
-            <p>8 live projects<br>deployed &amp; online.</p>
+            <p>10 live projects<br>deployed &amp; online.</p>
           </div>
         </div>
 
@@ -111,7 +111,7 @@
           <div class="hx__card">
             <div class="hx__stats">
               <div><b data-count="3" data-suffix="+">3+</b><span>Years of<br>experience</span></div>
-              <div><b data-count="8" data-suffix="">8</b><span>Live<br>projects</span></div>
+              <div><b data-count="9" data-suffix="">9</b><span>Live<br>projects</span></div>
             </div>
             <p class="hx__quote">Clean UI, powerful backend logic, seamless experiences across devices.</p>
             <ul class="hx__social" aria-label="Social links">
@@ -155,7 +155,7 @@
           </p>
           <dl class="stats reveal">
             <div><dt>Years of experience</dt><dd><span data-count="3" data-suffix="+">3+</span></dd></div>
-            <div><dt>Live projects</dt><dd><span data-count="8" data-suffix="">8</span></dd></div>
+            <div><dt>Live projects</dt><dd><span data-count="10" data-suffix="">10</span></dd></div>
             <div><dt>Technologies</dt><dd><span data-count="12" data-suffix="+">12+</span></dd></div>
           </dl>
         </div>
@@ -264,6 +264,49 @@
         </header>
 
         <div class="projects">
+          <article class="project glass reveal" data-tilt>
+            <div class="project__img">
+              <img src="ASSETS/happycup.png" alt="Happy Cup billing screen screenshot" loading="lazy" width="1273" height="585">
+            </div>
+            <div class="project__body">
+              <ul class="tags"><li>Angular</li><li>Node.js</li><li>MongoDB</li><li>POS</li></ul>
+              <h3>Happy Cup – Bill Management</h3>
+              <p>A full-stack billing and point-of-sale app for a café. Cashiers create bills from a tap-to-add item
+                screen, and every bill produces a printable PDF invoice, with a sales dashboard for admins...</p>
+              <div class="project__actions">
+                <a class="link" href="https://bill-management-system-flax.vercel.app/" target="_blank" rel="noopener">Live Demo <span aria-hidden="true">→</span><span class="sr-only"> (opens in new tab)</span></a>
+                <button class="link link--ghost" type="button" data-details="happycup-details" aria-haspopup="dialog">Details</button>
+              </div>
+            </div>
+            <dialog class="modal" id="happycup-details" aria-labelledby="happycup-details-title">
+              <div class="modal__box">
+                <button class="modal__close" type="button" data-close aria-label="Close details">&times;</button>
+                <img class="modal__img" src="ASSETS/happycup.png" alt="" width="1273" height="585" loading="lazy">
+                <h3 id="happycup-details-title">Happy Cup – Bill Management System</h3>
+                <p class="modal__lead">Café billing system with role-based access, a POS-style billing screen, PDF invoices and a sales dashboard.</p>
+
+                <h4>Features</h4>
+                <ul class="feat">
+                  <li><b>Role-based login</b><span>JWT sign-in with admin and cashier roles. A cashier sees only Billing and the Bill List, while an admin sees everything. Password reset by email OTP.</span></li>
+                  <li><b>POS billing screen</b><span>A fixed one-screen layout with a searchable, category-coloured item grid, quantity steppers, UPI, Cash or Card payment and automatic balance calculation. Saves the bill and shows an invoice PDF with Print and Download.</span></li>
+                  <li><b>Bill List</b><span>Search and filter bills, view items, cancel a bill with a reason, or change only the payment mode.</span></li>
+                  <li><b>Item master &amp; employees</b><span>Create, edit and delete with validation, search, sorting and paging.</span></li>
+                  <li><b>Dashboard &amp; reports</b><span>Total bills, sales, paid and pending amounts, a monthly revenue chart, payment-mode breakdown and recent bills. A date-range sales report exports to CSV and PDF.</span></li>
+                  <li><b>Retro themed UI</b><span>Custom palette (Mulberry, Tangerine, Leaves, Cream) built on shared CSS variables, with animated login and dashboard, responsive from desktop to phone.</span></li>
+                  <li><b>Popup-safe PDF preview</b><span>Receipt preview built after browsers blocked new-tab PDFs.</span></li>
+                  <li><b>SQL to MongoDB</b><span>Backend moved from a SQL data layer to MongoDB while keeping the original API contract, so the frontend kept working.</span></li>
+                </ul>
+
+                <h4>Tech stack</h4>
+                <ul class="tags">
+                  <li>Angular 16</li><li>TypeScript</li><li>Bootstrap 5</li><li>RxJS</li><li>pdfMake</li><li>SweetAlert2</li><li>ngx-toastr</li><li>Node.js</li><li>Express</li><li>MongoDB</li><li>Mongoose</li><li>JWT</li><li>bcrypt</li><li>Nodemailer</li><li>Vercel</li>
+                </ul>
+
+                <a class="link" href="https://bill-management-system-flax.vercel.app/" target="_blank" rel="noopener">Live Demo <span aria-hidden="true">→</span><span class="sr-only"> (opens in new tab)</span></a>
+              </div>
+            </dialog>
+          </article>
+
           <article class="project glass reveal" data-tilt>
             <div class="project__img">
               <img src="ASSETS/portfilio.png" alt="K. Arul Murugan artist portfolio screenshot" loading="lazy" width="1278" height="592">
@@ -503,7 +546,7 @@
           </article>
           <article class="glass ach__card reveal">
             <span class="ach__icon" aria-hidden="true"><svg viewBox="0 0 24 24" class="stroke"><path d="m8 8-5 4 5 4M16 8l5 4-5 4M14 5l-4 14"/></svg></span>
-            <h3>8 Live Projects</h3>
+            <h3>9 Live Projects</h3>
             <p>POS, sales dashboard, e-commerce, event management, bus booking and more — deployed and available online.</p>
           </article>
         </div>
